@@ -1,0 +1,145 @@
+@page "/about"
+
+<PageTitle>About</PageTitle>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8">
+            <h1>About This Application 📱</h1>
+
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">🎯 Project Overview</h5>
+                    <p class="card-text">
+                        This is a demonstration Blazor WebAssembly application built with <strong>.NET 10</strong> 
+                        and <strong>C# 14.0</strong>. The application runs entirely in your browser using WebAssembly technology.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">🚀 Key Features</h5>
+                    <ul>
+                        <li><strong>WebAssembly Runtime:</strong> Full .NET runtime compiled to WebAssembly</li>
+                        <li><strong>No Server Required:</strong> Runs entirely in the browser</li>
+                        <li><strong>Interactive Components:</strong> Real-time UI updates without page reloads</li>
+                        <li><strong>Type-Safe:</strong> C# with full type safety and intellisense</li>
+                        <li><strong>Component-Based:</strong> Reusable Razor components</li>
+                        <li><strong>GitHub Pages Deployment:</strong> Static site hosting without backend</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">📚 Technology Stack</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>Framework & Language:</strong></p>
+                            <ul class="small">
+                                <li>.NET 10.0</li>
+                                <li>C# 14.0</li>
+                                <li>Razor Components</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <p><strong>Frontend & Styling:</strong></p>
+                            <ul class="small">
+                                <li>Blazor WebAssembly</li>
+                                <li>Bootstrap 5</li>
+                                <li>HTML5 & CSS3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">🔄 How It Works</h5>
+                    <ol>
+                        <li><strong>Initial Load:</strong> Browser downloads HTML, CSS, and the .NET runtime</li>
+                        <li><strong>WASM Initialization:</strong> .NET runtime starts in your browser</li>
+                        <li><strong>Component Rendering:</strong> Blazor components are rendered as HTML</li>
+                        <li><strong>Interactivity:</strong> Click handlers and events run directly in the browser</li>
+                        <li><strong>No Network Delay:</strong> Instant response to user interactions</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">📊 Performance Benefits</h5>
+                    <ul>
+                        <li>⚡ Zero server latency for UI interactions</li>
+                        <li>💾 Reduced bandwidth usage</li>
+                        <li>🔒 Data stays on the client (privacy)</li>
+                        <li>📦 Can work offline after initial load</li>
+                        <li>🌍 Deployable as static content (GitHub Pages, CDN, etc.)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h5 class="card-title">🔗 Resources</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://learn.microsoft.com/aspnet/core/blazor/webassembly" target="_blank" rel="noopener noreferrer">
+                                📖 Microsoft Blazor Documentation
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/BinusLernhard/BlazorTestProj" target="_blank" rel="noopener noreferrer">
+                                🐙 GitHub Repository
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://learn.microsoft.com/dotnet/csharp/what-is-csharp" target="_blank" rel="noopener noreferrer">
+                                💻 C# Language Guide
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card sticky-top" style="top: 20px;">
+                <div class="card-body">
+                    <h5 class="card-title">Navigation</h5>
+                    <div class="list-group">
+                        <a href="/" class="list-group-item list-group-item-action">🏠 Home</a>
+                        <a href="/counter" class="list-group-item list-group-item-action">📊 Counter Demo</a>
+                        <a href="/weather" class="list-group-item list-group-item-action">🌤️ Weather Forecast</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">💡 Did You Know?</h5>
+                    <p class="small">
+                        Blazor WebAssembly applications can load and run in seconds, even on slow connections, 
+                        thanks to the efficient WASM binary format and tree-shaking optimization!
+                    </p>
+                </div>
+            </div>
+
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h5 class="card-title">🚀 Next Steps</h5>
+                    <p class="small">
+                        Try the interactive <strong>Counter</strong> component to see Blazor's 
+                        real-time capabilities, or check out the <strong>Weather</strong> data loaded from JSON!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+
+}

@@ -1,7 +1,53 @@
 ﻿@page "/"
+@page "/home"
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<div class="container mt-5">
+    <div class="row mb-4">
+        <div class="col-12">
+            <h1 class="display-4">Welcome to Blazor WebAssembly! 🚀</h1>
+            <p class="lead">This is a test application built with .NET 10 and Blazor.</p>
+        </div>
+    </div>
 
-Welcome to your new app.
+    <div class="row">
+        <div class="col-md-4 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">📊 Counter Demo</h5>
+                    <p class="card-text">Try the interactive counter component to see Blazor's interactivity.</p>
+                    <a href="counter" class="btn btn-primary btn-sm">Go to Counter</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">🌤️ Weather Data</h5>
+                    <p class="card-text">Explore sample weather data fetched from JSON.</p>
+                    <a href="weather" class="btn btn-primary btn-sm">Go to Weather</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">📝 About</h5>
+                    <p class="card-text">Learn more about this Blazor WebAssembly application.</p>
+                    <a href="about" class="btn btn-primary btn-sm">Go to About</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="alert alert-info" role="alert">
+                <strong>ℹ️ Tip:</strong> This app runs entirely in your browser using WebAssembly. No server requests needed for navigation!
+            </div>
+        </div>
+    </div>
+</div>

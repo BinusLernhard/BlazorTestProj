@@ -2,17 +2,84 @@
 
 <PageTitle>Counter</PageTitle>
 
-<h1>Counter</h1>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>Counter Demo 📊</h1>
 
-<p role="status">Current count: @currentCount</p>
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text">Current count: <strong class="text-primary" style="font-size: 1.5em;">@currentCount</strong></p>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-success" @onclick="IncrementCount">
+                            ➕ Increment
+                        </button>
+                        <button type="button" class="btn btn-danger" @onclick="DecrementCount">
+                            ➖ Decrement
+                        </button>
+                        <button type="button" class="btn btn-warning" @onclick="ResetCount">
+                            🔄 Reset
+                        </button>
+                    </div>
+
+                    <hr />
+
+                    <div class="mt-3">
+                        <p>
+                            <label>Add custom amount:</label>
+                            <input type="number" @bind="customAmount" class="form-control" placeholder="Enter number" />
+                        </p>
+                        <button class="btn btn-info" @onclick="() => currentCount += customAmount">
+                            Add @customAmount
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert alert-info mt-3">
+                <strong>Total increments this session:</strong> @totalIncrements
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h5 class="card-title">About this Counter</h5>
+                    <p class="card-text">
+                        This counter demonstrates Blazor's interactivity features:
+                    </p>
+                    <ul>
+                        <li>Event binding with <code>@@onclick</code></li>
+                        <li>Two-way data binding with <code>@@bind</code></li>
+                        <li>Real-time UI updates in the browser</li>
+                        <li>No server round-trips needed</li>
+                    </ul>
+                    <p class="text-muted">All processing happens in your WebAssembly runtime!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 @code {
     private int currentCount = 0;
+    private int totalIncrements = 0;
+    private int customAmount = 5;
 
     private void IncrementCount()
     {
         currentCount++;
+        totalIncrements++;
+    }
+
+    private void DecrementCount()
+    {
+        currentCount--;
+    }
+
+    private void ResetCount()
+    {
+        currentCount = 0;
     }
 }
